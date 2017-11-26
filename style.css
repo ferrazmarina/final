@@ -1,0 +1,235 @@
+body {
+  margin: 0px;
+  background-color: #ededed;
+  font-family: 'Raleway', sans-serif;
+  text-align: center;
+}
+
+#colorstrip{
+  width: 100%; height: 300px;
+  background-color: #cecece;
+}
+
+.hello {
+  font-size: 70px;
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  display: block;
+  padding: 110px;
+}
+
+.column {
+  float: left;
+  width: 25%;
+}
+
+.image {
+  width: 85%;
+  padding-bottom: 40px;
+}
+
+.margin {
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+/*teste*/
+/*.slide {
+  position: fixed;
+  left: 100%;
+}
+
+.slide-visible {
+  left: 0%;
+}
+
+.helper-open {
+  position: fixed;
+  z-index: -1;
+}
+
+.helper {
+  position: fixed;
+  text-align: center;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  z-index: -1;
+}
+
+.on-top {
+  z-index: 1;
+}*/
+/*fim do teste*/
+
+/*css slides*/
+.nav {
+  position: fixed;
+  top: 10px;
+  left: 100px;
+  z-index: 10;
+}
+
+.slide {
+  display: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: white;
+
+  transition-property: left;
+  transition-delay: 0s;
+  transition-duration: 0.5s;
+  transition-timing-function: ease-in-out;
+
+  left: 100%;
+}
+
+.slide-visible {
+  left: 0%;
+}
+
+.image_centered {
+  padding: 50px;
+  display: block;
+  margin: auto;
+  height: 500px;
+}
+
+#slide1 {
+  background-color: #cecece;
+}
+#slide2 {
+  background-color: #cecece;
+}
+#slide3 {
+  background-color: #cecece;
+}
+#slide4 {
+  background-color: #cecece;
+}
+#slide5 {
+  background-color: #cecece;
+}
+
+.prev {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+
+  padding: 6px 10px;
+  background-color: white;
+  color: black;
+
+  position: fixed;
+  top: 400px;
+  left: 400px;
+  z-index: 10;
+}
+
+.next {
+  font-size: 15px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+
+  padding: 6px 10px;
+  background-color: white;
+  color: black;
+
+  position: fixed;
+  top: 400px;
+  right: 400px;
+  z-index: 10;
+}
+/*fim css slides*/
+
+
+a:hover {
+  cursor: pointer;
+}
+
+.responsive {
+  width: 100%;
+  padding: 8%;
+  box-sizing: border-box;
+}
+
+.border {
+  border-style: solid;
+  padding: 10px;
+  border-width: 1px;
+  border-color: #4d9e93;
+}
+
+.navbar {
+  font-size: 15px;
+  background-color: white;
+  color: #4d9e93;
+  padding: 45px;
+  padding-bottom: 60px;
+}
+
+.navbar-right {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-end;
+  width: 50%;
+  float: right;
+}
+
+.navbar-left {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  width: 50%;
+  float: left;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 10pt;
+  letter-spacing: 2px;
+  margin-left: 20px;
+  padding-left: 3px;
+  padding-right: 3px;
+
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: #f6f381;
+  box-sizing: border-box;
+}
+
+.nav-link:first-child {
+  margin-left: 10px;
+}
+
+.nav-link:last-child {
+  margin-right: 10px;
+}
+
+.selected {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 600px){
+    .responsive {
+      background-color: #4d9e93;
+    }
+    body {
+      background-color: #4d9e93;
+    }
+    .nav-link {
+    display: block;
+    }
