@@ -1,6 +1,6 @@
 
-var buttonHelper = document.getElementById("helper-open");
-var divHelper = document.getElementById("helper");
+// var buttonHelper = document.getElementById("helper-open");
+// var divHelper = document.getElementById("helper");
 var buttonPrev = document.getElementById("prev");
 var buttonNext = document.getElementById("next");
 
@@ -8,10 +8,10 @@ var slides = Array.from(document.getElementsByClassName("slide"));
 console.log(slides);
 var slideIndex = 0;
 
-var funcOpenHelper = function(){
-  buttonHelper.classList.remove("on-top");
-  divHelper.classList.add("on-top");
-}
+// var funcOpenHelper = function(){
+//   buttonHelper.classList.remove("on-top");
+//   divHelper.classList.add("on-top");
+// }
 
 var funcPrev = function(){
   if (slideIndex > 0){

@@ -5,6 +5,7 @@ body {
   text-align: center;
 }
 
+/*style index */
 #colorstrip{
   width: 100%; height: 300px;
   background-color: #cecece;
@@ -32,57 +33,19 @@ body {
   margin-left: 45px;
   margin-right: 45px;
 }
+/*style index*/
 
-/*teste*/
-/*.slide {
-  position: fixed;
-  left: 100%;
-}
-
-.slide-visible {
-  left: 0%;
-}
-
-.helper-open {
-  position: fixed;
-  z-index: -1;
-}
-
-.helper {
-  position: fixed;
-  text-align: center;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-
-  z-index: -1;
-}
-
-.on-top {
-  z-index: 1;
-}*/
-/*fim do teste*/
-
-/*css slides*/
-.nav {
-  position: fixed;
-  top: 10px;
-  left: 100px;
-  z-index: 10;
-}
-
+/*style posters*/
 .slide {
-  display: fixed;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
-  position: fixed;
-  height: 100%;
+  position: absolute;
+  height: 600px;
   width: 100%;
   background-color: white;
+  top: 105px;
 
   transition-property: left;
   transition-delay: 0s;
@@ -96,6 +59,10 @@ body {
   left: 0%;
 }
 
+.slide-bg {
+  height: 660px;
+}
+
 .image_centered {
   padding: 50px;
   display: block;
@@ -107,13 +74,13 @@ body {
   background-color: #cecece;
 }
 #slide2 {
-  background-color: #cecece;
+  background-color: #bfbfbf;
 }
 #slide3 {
   background-color: #cecece;
 }
 #slide4 {
-  background-color: #cecece;
+  background-color: #bfbfbf;
 }
 #slide5 {
   background-color: #cecece;
@@ -128,7 +95,7 @@ body {
   background-color: white;
   color: black;
 
-  position: fixed;
+  position: absolute;
   top: 400px;
   left: 400px;
   z-index: 10;
@@ -143,29 +110,55 @@ body {
   background-color: white;
   color: black;
 
-  position: fixed;
+  position: absolute;
   top: 400px;
   right: 400px;
   z-index: 10;
 }
-/*fim css slides*/
 
+/*style sites*/
+.column-sites {
+  float: left;
+  width: 200px;
+}
+
+.image-sites {
+  width: 200px;
+  padding-bottom: 10px;
+}
+
+.border {
+  border-style: solid;
+  padding: 20px;
+  border-width: 1px;
+  border-color: black;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  color: black;
+  text-align: left;
+  padding-bottom: 10px;
+}
+
+.site {
+  font-size: 10px;
+  font-weight: 200;
+  color: grey;
+}
+/*style sites*/
 
 a:hover {
   cursor: pointer;
 }
 
+
+/*style index navbar*/
 .responsive {
   width: 100%;
   padding: 8%;
   box-sizing: border-box;
-}
-
-.border {
-  border-style: solid;
-  padding: 10px;
-  border-width: 1px;
-  border-color: #4d9e93;
 }
 
 .navbar {
@@ -222,6 +215,11 @@ a:hover {
   background-color: white;
   color: black;
 }
+
+
+
+
+
 
 @media (max-width: 600px){
     .responsive {
