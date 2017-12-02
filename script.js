@@ -35,8 +35,13 @@ var funcKeyDown = function(event){
   }
 }
 
+
 // buttonHelper.addEventListener('click', funcOpenHelper);
-buttonPrev.addEventListener('click', funcPrev);
-buttonNext.addEventListener('click', funcNext);
+if (buttonPrev != null){
+  buttonPrev.addEventListener('click', funcPrev);
+}
+if (buttonNext != null){
+  buttonNext.addEventListener('click', funcNext);
+}
 document.addEventListener('keydown', funcKeyDown);
 console.log("hello world")
