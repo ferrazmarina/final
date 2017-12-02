@@ -3,6 +3,7 @@ body {
   background-color: #ededed;
   font-family: 'Raleway', sans-serif;
   text-align: center;
+  overflow-x: hidden;
 }
 
 #colorstrip{
@@ -11,13 +12,26 @@ body {
 }
 
 .hello {
-  font-size: 70px;
+  /*font-size: 70px;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  text-transform: uppercase;*/
+
+  height: 50px;
   color: white;
+  padding-top: 110px;
+  padding-bottom: 10px;
+}
+
+.about {
+  font-size: 15px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #5a5a5a;
+  padding: 5px;
   display: block;
-  padding: 110px;
   text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 /*style for columns */
@@ -94,7 +108,7 @@ body {
 /*end style for columns */
 
 
-/*style slide posters*/
+/*style slides*/
 .slide {
   align-items: center;
   justify-content: center;
@@ -139,8 +153,10 @@ body {
 }
 
 .text-slide {
-  font-family: 'Open Sans', sans-serif;
   font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  color: #5a5a5a;
   text-transform: uppercase;
 }
 
@@ -199,7 +215,7 @@ body {
   color: white;
   background-color: black;
 }
-/*end style slide posters*/
+/*end style slides*/
 
 
 a:hover {
@@ -263,7 +279,6 @@ a:hover {
 .nav-link:last-child {
   margin-right: 10px;
 }
-
 /*style index navbar*/
 
 
@@ -277,11 +292,9 @@ a:hover {
 
 @media (max-width: 600px){
     .responsive {
-      background-color: #4d9e93;
+      background-color: #ededed;
     }
-    body {
-      background-color: #4d9e93;
-    }
+
     .nav-link {
     display: block;
     }
