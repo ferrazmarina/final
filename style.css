@@ -5,7 +5,6 @@ body {
   text-align: center;
 }
 
-/*style index */
 #colorstrip{
   width: 100%; height: 300px;
   background-color: #cecece;
@@ -14,11 +13,14 @@ body {
 .hello {
   font-size: 70px;
   font-family: 'Raleway', sans-serif;
+  font-weight: 500;
   color: white;
   display: block;
   padding: 110px;
+  text-transform: uppercase;
 }
 
+/*style for columns */
 .column {
   float: left;
   width: 25%;
@@ -33,16 +35,73 @@ body {
   margin-left: 45px;
   margin-right: 45px;
 }
-/*style index*/
 
-/*style posters*/
+.margin-sites {
+  margin-left: 120px;
+}
+
+.box {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+}
+
+.column-sites {
+  float: left;
+  width: 30%;
+}
+
+.image-sites {
+  /*width: 70%;*/
+  max-width:100%;
+  max-height:100%;
+  padding-bottom: 10px;
+}
+
+.border {
+  border-style: solid;
+  padding: 20px;
+  border-width: 1px;
+  border-color: #a6a6a6;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300px;
+  text-align: left;
+}
+
+.site {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  font-weight: 300;
+  color: grey;
+  text-align: left;
+  text-decoration: none;
+}
+
+.site:hover {
+  text-decoration: underline;
+}
+/*end style for columns */
+
+
+/*style slide posters*/
 .slide {
   align-items: center;
   justify-content: center;
   flex-direction: column;
 
   position: absolute;
-  height: 600px;
+  height: 700px;
   width: 100%;
   background-color: white;
   top: 105px;
@@ -60,27 +119,42 @@ body {
 }
 
 .slide-bg {
-  height: 660px;
+  height: 760px;
 }
 
 .image_centered {
-  padding: 50px;
+  padding-bottom: 20px;
+  padding-top: 50px;
   display: block;
   margin: auto;
   height: 500px;
+}
+
+.image_centered_type {
+  padding-bottom: 20px;
+  padding-top: 50px;
+  display: block;
+  margin: auto;
+  height: 600px;
+}
+
+.text-slide {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
 }
 
 #slide1 {
   background-color: #cecece;
 }
 #slide2 {
-  background-color: #bfbfbf;
+  background-color: #bcbcbc;
 }
 #slide3 {
   background-color: #cecece;
 }
 #slide4 {
-  background-color: #bfbfbf;
+  background-color: #bcbcbc;
 }
 #slide5 {
   background-color: #cecece;
@@ -88,7 +162,7 @@ body {
 
 .prev {
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 
   padding: 6px 10px;
@@ -103,7 +177,7 @@ body {
 
 .next {
   font-size: 15px;
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 
   padding: 6px 10px;
@@ -116,38 +190,17 @@ body {
   z-index: 10;
 }
 
-/*style sites*/
-.column-sites {
-  float: left;
-  width: 200px;
+.next:hover {
+  color: white;
+  background-color: black;
 }
 
-.image-sites {
-  width: 200px;
-  padding-bottom: 10px;
+.prev:hover {
+  color: white;
+  background-color: black;
 }
+/*end style slide posters*/
 
-.border {
-  border-style: solid;
-  padding: 20px;
-  border-width: 1px;
-  border-color: black;
-}
-
-.title {
-  font-size: 13px;
-  font-weight: 600;
-  color: black;
-  text-align: left;
-  padding-bottom: 10px;
-}
-
-.site {
-  font-size: 10px;
-  font-weight: 200;
-  color: grey;
-}
-/*style sites*/
 
 a:hover {
   cursor: pointer;
@@ -198,8 +251,8 @@ a:hover {
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: #f6f381;
+  color: white;
+  background-color: black;
   box-sizing: border-box;
 }
 
@@ -211,13 +264,14 @@ a:hover {
   margin-right: 10px;
 }
 
-.selected {
+/*style index navbar*/
+
+
+
+/*.selected {
   background-color: white;
   color: black;
-}
-
-
-
+}*/
 
 
 

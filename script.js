@@ -17,12 +17,14 @@ var funcPrev = function(){
   if (slideIndex > 0){
     slides[slideIndex].classList.remove("slide-visible");
     slideIndex = slideIndex - 1;
+    funcPauseAllAudio();
   }
 }
 var funcNext = function(){
   if (slideIndex < slides.length - 1){
     slideIndex = slideIndex + 1;
     slides[slideIndex].classList.add("slide-visible");
+    funcPauseAllAudio();
   }
 }
 var funcKeyDown = function(event){
@@ -34,6 +36,14 @@ var funcKeyDown = function(event){
     funcNext();
   }
 }
+
+var funcPauseAllAudio = function(){
+  var audioElms = Array.from(document.getElementsByTagName('audio'));
+  audioElms.forEach(function (ae){
+    ae.pause();
+  });
+}
+
 
 
 // buttonHelper.addEventListener('click', funcOpenHelper);
